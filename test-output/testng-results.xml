@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="13" passed="13">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="186536" started-at="2019-10-07T16:57:55 IST" finished-at="2019-10-07T17:01:02 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="186536" started-at="2019-10-07T16:57:55 IST" finished-at="2019-10-07T17:01:02 IST">
+      <class name="SignUpTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:SignUpTest@18eed359]" name="setUp" is-config="true" duration-ms="10634" started-at="2019-10-07T16:57:56 IST" finished-at="2019-10-07T16:58:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="13030" started-at="2019-10-07T16:58:06 IST" finished-at="2019-10-07T16:58:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="emptyEmailTest()[pri:0, instance:SignUpTest@18eed359]" name="emptyEmailTest" duration-ms="9832" started-at="2019-10-07T16:58:19 IST" finished-at="2019-10-07T16:58:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyEmailTest -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="5400" started-at="2019-10-07T16:58:29 IST" finished-at="2019-10-07T16:58:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="emptyNameTest()[pri:0, instance:SignUpTest@18eed359]" name="emptyNameTest" duration-ms="9698" started-at="2019-10-07T16:58:34 IST" finished-at="2019-10-07T16:58:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyNameTest -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="4973" started-at="2019-10-07T16:58:44 IST" finished-at="2019-10-07T16:58:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="emptyPasswordTest()[pri:0, instance:SignUpTest@18eed359]" name="emptyPasswordTest" duration-ms="9448" started-at="2019-10-07T16:58:49 IST" finished-at="2019-10-07T16:58:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyPasswordTest -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="5189" started-at="2019-10-07T16:58:59 IST" finished-at="2019-10-07T16:59:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="emptyPhoneTest()[pri:0, instance:SignUpTest@18eed359]" name="emptyPhoneTest" duration-ms="9629" started-at="2019-10-07T16:59:04 IST" finished-at="2019-10-07T16:59:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyPhoneTest -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="5097" started-at="2019-10-07T16:59:13 IST" finished-at="2019-10-07T16:59:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="inValidPasswordTest()[pri:0, instance:SignUpTest@18eed359]" name="inValidPasswordTest" duration-ms="9230" started-at="2019-10-07T16:59:18 IST" finished-at="2019-10-07T16:59:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inValidPasswordTest -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="4963" started-at="2019-10-07T16:59:28 IST" finished-at="2019-10-07T16:59:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="inValidPhoneTest()[pri:0, instance:SignUpTest@18eed359]" name="inValidPhoneTest" duration-ms="9423" started-at="2019-10-07T16:59:33 IST" finished-at="2019-10-07T16:59:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inValidPhoneTest -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="5131" started-at="2019-10-07T16:59:42 IST" finished-at="2019-10-07T16:59:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="invalidEmailTest()[pri:0, instance:SignUpTest@18eed359]" name="invalidEmailTest" duration-ms="9263" started-at="2019-10-07T16:59:47 IST" finished-at="2019-10-07T16:59:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmailTest -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="5048" started-at="2019-10-07T16:59:56 IST" finished-at="2019-10-07T17:00:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="uncheckedTerms()[pri:0, instance:SignUpTest@18eed359]" name="uncheckedTerms" duration-ms="8726" started-at="2019-10-07T17:00:02 IST" finished-at="2019-10-07T17:00:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uncheckedTerms -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="4898" started-at="2019-10-07T17:00:10 IST" finished-at="2019-10-07T17:00:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="validRegistrationTest()[pri:0, instance:SignUpTest@18eed359]" name="validRegistrationTest" duration-ms="8417" started-at="2019-10-07T17:00:15 IST" finished-at="2019-10-07T17:00:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validRegistrationTest -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="5031" started-at="2019-10-07T17:00:24 IST" finished-at="2019-10-07T17:00:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="verifyElemntsOnPageTest()[pri:0, instance:SignUpTest@18eed359]" name="verifyElemntsOnPageTest" duration-ms="4028" started-at="2019-10-07T17:00:29 IST" finished-at="2019-10-07T17:00:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyElemntsOnPageTest -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="4976" started-at="2019-10-07T17:00:33 IST" finished-at="2019-10-07T17:00:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="verifyLoginRedirection()[pri:0, instance:SignUpTest@18eed359]" name="verifyLoginRedirection" duration-ms="2616" started-at="2019-10-07T17:00:38 IST" finished-at="2019-10-07T17:00:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginRedirection -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="4932" started-at="2019-10-07T17:00:40 IST" finished-at="2019-10-07T17:00:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="verifyPrivacyPolicyRedirection()[pri:0, instance:SignUpTest@18eed359]" name="verifyPrivacyPolicyRedirection" duration-ms="4548" started-at="2019-10-07T17:00:45 IST" finished-at="2019-10-07T17:00:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPrivacyPolicyRedirection -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="5118" started-at="2019-10-07T17:00:50 IST" finished-at="2019-10-07T17:00:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="verifyTermsRedirection()[pri:0, instance:SignUpTest@18eed359]" name="verifyTermsRedirection" duration-ms="5098" started-at="2019-10-07T17:00:55 IST" finished-at="2019-10-07T17:01:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTermsRedirection -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SignUpTest@18eed359]" name="tearDown" is-config="true" duration-ms="2100" started-at="2019-10-07T17:01:00 IST" finished-at="2019-10-07T17:01:02 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SignUpTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
