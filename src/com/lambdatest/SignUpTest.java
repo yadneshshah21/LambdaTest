@@ -22,12 +22,15 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
  
 public class SignUpTest{
-    public String username = "yadneshshah91";
+    
+	public String username = "yadneshshah91";
     public String accesskey = "iD4oCZKyC8R2kwH1kLhTxAGgXZFANGoyzGDzY9RTqDTx9jskZo";
     public static RemoteWebDriver driver = null;
     public String gridURL = "@hub.lambdatest.com/wd/hub";
     boolean status = false;
   
+    
+    //Setting up capabilities to run our test script
     @BeforeClass
     	public void setUp() throws Exception {
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -50,7 +53,7 @@ public class SignUpTest{
                
     }
     
-    
+    //Opening browser with the given URL and navigate to Registration Page
     @BeforeMethod
     public void openBrowser()
     {
@@ -66,6 +69,7 @@ public class SignUpTest{
         
     }
     
+    //Verifying elements on Registration page
     @Test
     public void verifyElemntsOnPageTest()
     {
@@ -83,6 +87,7 @@ public class SignUpTest{
     	
     }
     
+    //Verifying redirection to the terms and conditions page
     @Test
     public void termsRedirectionTest()
     {
@@ -108,6 +113,7 @@ public class SignUpTest{
     	
     }
     
+    //Verifying Privacy policy page redirection
     @Test
     public void privacyPolicyRedirectionTest()
     {
@@ -132,6 +138,8 @@ public class SignUpTest{
     	Assert.assertEquals(actualTitle, expectedTitle);
     }
     
+    
+    //Verifying redirection to the Login page from Registration page
     @Test
     public void loginRedirectionTest()
     {
@@ -150,6 +158,7 @@ public class SignUpTest{
     	
     }
   
+    // Registration with all valid data
     @Test
     public void validRegistrationTest(){            
               
@@ -185,6 +194,7 @@ public class SignUpTest{
         
     }
     
+    // Registration without providing Company Name field
     @Test
     public void emptyCompanyNameTest()
     {
@@ -225,6 +235,7 @@ public class SignUpTest{
          Assert.assertEquals(actualTitle, expectedTitle);
     }
     
+    // Registration without providing Name field
     @Test
     public void emptyNameTest()
     {
@@ -258,6 +269,7 @@ public class SignUpTest{
         
     }
     
+    // Registration without providing user email field
     @Test
     public void emptyEmailTest()
     {
@@ -290,6 +302,7 @@ public class SignUpTest{
         Assert.assertEquals(actualErrorMsg, expectedErrorMsg);
     }
     
+    // Registration with email id which already have account
     @Test
     public void invalidEmailTest()
     {
@@ -323,6 +336,7 @@ public class SignUpTest{
         Assert.assertEquals(actualErrorMsg, expectedErrorMsg);
     }
     
+    // Registration without providing password field
     @Test
     public void emptyPasswordTest()
     {
@@ -355,6 +369,7 @@ public class SignUpTest{
         Assert.assertEquals(actualErrorMsg, expectedErrorMsg);
     }
     
+    // Registration with invalid password
     @Test
     public void inValidPasswordTest()
     {
@@ -388,6 +403,7 @@ public class SignUpTest{
     	//Password should be at least 8 characters long
     }
   
+    // Registration without providing user phone number field
     @Test
     public void emptyPhoneTest()
     {
@@ -420,7 +436,7 @@ public class SignUpTest{
         Assert.assertEquals(actualErrorMsg, expectedErrorMsg);
     }
     
-    
+    // Registration with providing invalid user phone number field
     @Test
     public void inValidPhoneTest()
     {
@@ -455,6 +471,7 @@ public class SignUpTest{
     	//Please enter a valid Phone number
     }
     
+    // Registration without accepting terms and condition tickbox
     @Test
     public void uncheckedTerms()
     {
@@ -487,6 +504,7 @@ public class SignUpTest{
     	Assert.assertEquals(actualTermsErrorMessage, expectedTermsErrorMessage);
     }
     
+    // Closing the browser session after completing each test case
     @AfterClass
     public void tearDown() throws Exception {
        if (driver != null) {
