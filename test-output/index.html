@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\yadnesh\AppData\Local\Temp\testng-eclipse-338956572\testng-customsuite.xml</span>
+                    <span>C:\Users\yadnesh\AppData\Local\Temp\testng-eclipse-1455824270\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods,   13 passed</span>
+                    <span class="method-stats">14 methods, 2 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lambdatest.SignUpTest" hash-for-method="emptyCompanyNameTest">emptyCompanyNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lambdatest.SignUpTest" hash-for-method="validRegistrationTest">validRegistrationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,67 +121,62 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="SignUpTest" hash-for-method="emptyEmailTest">emptyEmailTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lambdatest.SignUpTest" hash-for-method="emptyEmailTest">emptyEmailTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="SignUpTest" hash-for-method="emptyNameTest">emptyNameTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lambdatest.SignUpTest" hash-for-method="emptyNameTest">emptyNameTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="SignUpTest" hash-for-method="emptyPasswordTest">emptyPasswordTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lambdatest.SignUpTest" hash-for-method="emptyPasswordTest">emptyPasswordTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="SignUpTest" hash-for-method="emptyPhoneTest">emptyPhoneTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lambdatest.SignUpTest" hash-for-method="emptyPhoneTest">emptyPhoneTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="SignUpTest" hash-for-method="inValidPasswordTest">inValidPasswordTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lambdatest.SignUpTest" hash-for-method="inValidPasswordTest">inValidPasswordTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="SignUpTest" hash-for-method="inValidPhoneTest">inValidPhoneTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lambdatest.SignUpTest" hash-for-method="inValidPhoneTest">inValidPhoneTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="SignUpTest" hash-for-method="invalidEmailTest">invalidEmailTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lambdatest.SignUpTest" hash-for-method="invalidEmailTest">invalidEmailTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="SignUpTest" hash-for-method="uncheckedTerms">uncheckedTerms</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lambdatest.SignUpTest" hash-for-method="loginRedirectionTest">loginRedirectionTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="SignUpTest" hash-for-method="validRegistrationTest">validRegistrationTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lambdatest.SignUpTest" hash-for-method="privacyPolicyRedirectionTest">privacyPolicyRedirectionTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="SignUpTest" hash-for-method="verifyElemntsOnPageTest">verifyElemntsOnPageTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lambdatest.SignUpTest" hash-for-method="termsRedirectionTest">termsRedirectionTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="SignUpTest" hash-for-method="verifyLoginRedirection">verifyLoginRedirection</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lambdatest.SignUpTest" hash-for-method="uncheckedTerms">uncheckedTerms</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="SignUpTest" hash-for-method="verifyPrivacyPolicyRedirection">verifyPrivacyPolicyRedirection</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="SignUpTest" hash-for-method="verifyTermsRedirection">verifyTermsRedirection</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.lambdatest.SignUpTest" hash-for-method="verifyElemntsOnPageTest">verifyElemntsOnPageTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -177,10 +191,106 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.lambdatest.SignUpTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="emptyCompanyNameTest">
+                  </a> <!-- emptyCompanyNameTest -->
+                  <span class="method-name">emptyCompanyNameTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Login - LambdaTest] but found [Verify Your Email Address - LambdaTest]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.lambdatest.SignUpTest.emptyCompanyNameTest(SignUpTest.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validRegistrationTest">
+                  </a> <!-- validRegistrationTest -->
+                  <span class="method-name">validRegistrationTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Login - LambdaTest] but found [Verify Your Email Address - LambdaTest]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.lambdatest.SignUpTest.validRegistrationTest(SignUpTest.java:183)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">SignUpTest</span>
+              <span class="class-name">com.lambdatest.SignUpTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -234,16 +344,30 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="uncheckedTerms">
-                  </a> <!-- uncheckedTerms -->
-                  <span class="method-name">uncheckedTerms</span>
+                  <a name="loginRedirectionTest">
+                  </a> <!-- loginRedirectionTest -->
+                  <span class="method-name">loginRedirectionTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validRegistrationTest">
-                  </a> <!-- validRegistrationTest -->
-                  <span class="method-name">validRegistrationTest</span>
+                  <a name="privacyPolicyRedirectionTest">
+                  </a> <!-- privacyPolicyRedirectionTest -->
+                  <span class="method-name">privacyPolicyRedirectionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="termsRedirectionTest">
+                  </a> <!-- termsRedirectionTest -->
+                  <span class="method-name">termsRedirectionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uncheckedTerms">
+                  </a> <!-- uncheckedTerms -->
+                  <span class="method-name">uncheckedTerms</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -253,33 +377,12 @@
                   <span class="method-name">verifyElemntsOnPageTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginRedirection">
-                  </a> <!-- verifyLoginRedirection -->
-                  <span class="method-name">verifyLoginRedirection</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPrivacyPolicyRedirection">
-                  </a> <!-- verifyPrivacyPolicyRedirection -->
-                  <span class="method-name">verifyPrivacyPolicyRedirection</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyTermsRedirection">
-                  </a> <!-- verifyTermsRedirection -->
-                  <span class="method-name">verifyTermsRedirection</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\yadnesh\AppData\Local\Temp\testng-eclipse-338956572\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\yadnesh\AppData\Local\Temp\testng-eclipse-1455824270\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -288,7 +391,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;SignUpTest&quot;/&gt;
+      &lt;class name=&quot;com.lambdatest.SignUpTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -328,64 +431,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(13);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'emptyEmailTest')
-data.setCell(0, 2, 'SignUpTest')
-data.setCell(0, 3, 9832);
+data.setCell(0, 1, 'emptyCompanyNameTest')
+data.setCell(0, 2, 'com.lambdatest.SignUpTest')
+data.setCell(0, 3, 14816);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'emptyNameTest')
-data.setCell(1, 2, 'SignUpTest')
-data.setCell(1, 3, 9698);
+data.setCell(1, 1, 'validRegistrationTest')
+data.setCell(1, 2, 'com.lambdatest.SignUpTest')
+data.setCell(1, 3, 13818);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'emptyPhoneTest')
-data.setCell(2, 2, 'SignUpTest')
-data.setCell(2, 3, 9629);
+data.setCell(2, 2, 'com.lambdatest.SignUpTest')
+data.setCell(2, 3, 10295);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'emptyPasswordTest')
-data.setCell(3, 2, 'SignUpTest')
-data.setCell(3, 3, 9448);
+data.setCell(3, 1, 'emptyNameTest')
+data.setCell(3, 2, 'com.lambdatest.SignUpTest')
+data.setCell(3, 3, 9920);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'inValidPhoneTest')
-data.setCell(4, 2, 'SignUpTest')
-data.setCell(4, 3, 9423);
+data.setCell(4, 1, 'emptyEmailTest')
+data.setCell(4, 2, 'com.lambdatest.SignUpTest')
+data.setCell(4, 3, 9754);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'invalidEmailTest')
-data.setCell(5, 2, 'SignUpTest')
-data.setCell(5, 3, 9263);
+data.setCell(5, 1, 'emptyPasswordTest')
+data.setCell(5, 2, 'com.lambdatest.SignUpTest')
+data.setCell(5, 3, 9682);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'inValidPasswordTest')
-data.setCell(6, 2, 'SignUpTest')
-data.setCell(6, 3, 9230);
+data.setCell(6, 2, 'com.lambdatest.SignUpTest')
+data.setCell(6, 3, 9294);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'uncheckedTerms')
-data.setCell(7, 2, 'SignUpTest')
-data.setCell(7, 3, 8726);
+data.setCell(7, 1, 'invalidEmailTest')
+data.setCell(7, 2, 'com.lambdatest.SignUpTest')
+data.setCell(7, 3, 9252);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'validRegistrationTest')
-data.setCell(8, 2, 'SignUpTest')
-data.setCell(8, 3, 8417);
+data.setCell(8, 1, 'inValidPhoneTest')
+data.setCell(8, 2, 'com.lambdatest.SignUpTest')
+data.setCell(8, 3, 9171);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyTermsRedirection')
-data.setCell(9, 2, 'SignUpTest')
-data.setCell(9, 3, 5098);
+data.setCell(9, 1, 'uncheckedTerms')
+data.setCell(9, 2, 'com.lambdatest.SignUpTest')
+data.setCell(9, 3, 7977);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyPrivacyPolicyRedirection')
-data.setCell(10, 2, 'SignUpTest')
-data.setCell(10, 3, 4548);
+data.setCell(10, 1, 'termsRedirectionTest')
+data.setCell(10, 2, 'com.lambdatest.SignUpTest')
+data.setCell(10, 3, 5007);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyElemntsOnPageTest')
-data.setCell(11, 2, 'SignUpTest')
-data.setCell(11, 3, 4028);
+data.setCell(11, 1, 'privacyPolicyRedirectionTest')
+data.setCell(11, 2, 'com.lambdatest.SignUpTest')
+data.setCell(11, 3, 4990);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifyLoginRedirection')
-data.setCell(12, 2, 'SignUpTest')
-data.setCell(12, 3, 2616);
+data.setCell(12, 1, 'verifyElemntsOnPageTest')
+data.setCell(12, 2, 'com.lambdatest.SignUpTest')
+data.setCell(12, 3, 4142);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'loginRedirectionTest')
+data.setCell(13, 2, 'com.lambdatest.SignUpTest')
+data.setCell(13, 3, 2547);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -411,118 +518,130 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">SignUpTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.lambdatest.SignUpTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">10641 ms</span>
+                <span class="method-start">10164 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">emptyCompanyNameTest</span>
+                <span class="method-start">25681 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">40501 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyEmailTest</span>
-                <span class="method-start">23673 ms</span>
+                <span class="method-start">46062 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">33511 ms</span>
+                <span class="method-start">55821 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyNameTest</span>
-                <span class="method-start">38911 ms</span>
+                <span class="method-start">60906 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">48613 ms</span>
+                <span class="method-start">70830 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyPasswordTest</span>
-                <span class="method-start">53586 ms</span>
+                <span class="method-start">76182 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">63035 ms</span>
+                <span class="method-start">85867 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyPhoneTest</span>
-                <span class="method-start">68224 ms</span>
+                <span class="method-start">90812 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">77859 ms</span>
+                <span class="method-start">101110 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">inValidPasswordTest</span>
-                <span class="method-start">82957 ms</span>
+                <span class="method-start">106432 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">92190 ms</span>
+                <span class="method-start">115727 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">inValidPhoneTest</span>
-                <span class="method-start">97153 ms</span>
+                <span class="method-start">120626 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">106578 ms</span>
+                <span class="method-start">129798 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidEmailTest</span>
-                <span class="method-start">111709 ms</span>
+                <span class="method-start">134699 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">120973 ms</span>
+                <span class="method-start">143954 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginRedirectionTest</span>
+                <span class="method-start">148422 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">150971 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">privacyPolicyRedirectionTest</span>
+                <span class="method-start">155876 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">160869 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">termsRedirectionTest</span>
+                <span class="method-start">165604 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">170613 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">uncheckedTerms</span>
-                <span class="method-start">126022 ms</span>
+                <span class="method-start">175621 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">134751 ms</span>
+                <span class="method-start">183600 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">validRegistrationTest</span>
-                <span class="method-start">139649 ms</span>
+                <span class="method-start">188375 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">openBrowser</span>
-                <span class="method-start">148067 ms</span>
+                <span class="method-start">202197 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyElemntsOnPageTest</span>
-                <span class="method-start">153098 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">openBrowser</span>
-                <span class="method-start">157127 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyLoginRedirection</span>
-                <span class="method-start">162103 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">openBrowser</span>
-                <span class="method-start">164719 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyPrivacyPolicyRedirection</span>
-                <span class="method-start">169652 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">openBrowser</span>
-                <span class="method-start">174200 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyTermsRedirection</span>
-                <span class="method-start">179318 ms</span>
+                <span class="method-start">207014 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">184419 ms</span>
+                <span class="method-start">211157 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

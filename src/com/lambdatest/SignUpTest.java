@@ -1,3 +1,4 @@
+package com.lambdatest;
 
 
 //TestNG Todo : Sample App
@@ -83,7 +84,7 @@ public class SignUpTest{
     }
     
     @Test
-    public void verifyTermsRedirection()
+    public void termsRedirectionTest()
     {
     	WebElement termsLink = driver.findElement(By.xpath("//a[contains(text(),'Terms')]"));
     	termsLink.click();    	
@@ -108,7 +109,7 @@ public class SignUpTest{
     }
     
     @Test
-    public void verifyPrivacyPolicyRedirection()
+    public void privacyPolicyRedirectionTest()
     {
     	WebElement privacyPolicyLink = driver.findElement(By.xpath("//a[contains(text(),'Privacy')]"));
     	privacyPolicyLink.click();
@@ -132,7 +133,7 @@ public class SignUpTest{
     }
     
     @Test
-    public void verifyLoginRedirection()
+    public void loginRedirectionTest()
     {
     	WebElement loginLink = driver.findElement(By.xpath("//a[contains(text(),'Login')]"));
     	loginLink.click();
@@ -159,10 +160,10 @@ public class SignUpTest{
         fullName.sendKeys("TestName");
              
         WebElement email = driver.findElement(By.name("email"));
-        email.sendKeys("test.lambdatest+2@gmail.com");
+        email.sendKeys("test3.lambdatest@gmail.com");
          
         WebElement password = driver.findElement(By.name("password"));
-        password.sendKeys("Test@123");
+        password.sendKeys("Test@12345");
  
         WebElement phone = driver.findElement(By.name("phone"));
         phone.sendKeys("9876543210");
@@ -172,6 +173,56 @@ public class SignUpTest{
               
         WebElement signUp = driver.findElement(By.xpath("//button[contains(@class,'btn sign-up-btn-2 btn-block')]"));
         signUp.click();
+        
+        String expectedURL = "https://accounts.lambdatest.com/email/verify";
+        String actualURL = driver.getCurrentUrl();
+        Assert.assertEquals(actualURL, expectedURL);
+        
+        String expectedTitle = "Verify Your Email Address - LambdaTest";
+        String actualTitle = driver.getTitle();
+        Assert.assertEquals(actualTitle, expectedTitle);
+        
+        
+    }
+    
+    @Test
+    public void emptyCompanyNameTest()
+    {
+    	 WebElement companyName = driver.findElement(By.name("organization_name"));
+         companyName.sendKeys("");
+              
+         WebElement fullName = driver.findElement(By.name("name"));
+         fullName.sendKeys("TestName");
+              
+         WebElement email = driver.findElement(By.name("email"));
+         email.sendKeys("test2.lambdatest@gmail.com");
+          
+         WebElement password = driver.findElement(By.name("password"));
+         password.sendKeys("Test@12345");
+  
+         WebElement phone = driver.findElement(By.name("phone"));
+         phone.sendKeys("9876543210");
+             
+         WebElement termsOfServices = driver.findElement(By.id("terms_of_service"));
+         termsOfServices.click();
+               
+         WebElement signUp = driver.findElement(By.xpath("//button[contains(@class,'btn sign-up-btn-2 btn-block')]"));
+         signUp.click();
+         
+         
+		/*
+		 * Set <String> allWindows = driver.getWindowHandles();
+		 * 
+		 * for(String handle : allWindows) { driver.switchTo().window(handle); }
+		 */ 
+         
+         String expectedURL = "https://accounts.lambdatest.com/email/verify";
+         String actualURL = driver.getCurrentUrl();
+         Assert.assertEquals(actualURL, expectedURL);
+         
+         String expectedTitle = "Verify Your Email Address - LambdaTest";
+         String actualTitle = driver.getTitle();
+         Assert.assertEquals(actualTitle, expectedTitle);
     }
     
     @Test
@@ -422,13 +473,18 @@ public class SignUpTest{
         WebElement phone = driver.findElement(By.name("phone"));
         phone.sendKeys("9876543210");
             
-        WebElement termsOfServices = driver.findElement(By.id("terms_of_service"));
-        termsOfServices.click();
+        //WebElement termsOfServices = driver.findElement(By.id("terms_of_service"));
+        //termsOfServices.click();
          
         WebElement signUp = driver.findElement(By.xpath("//button[contains(@class,'btn sign-up-btn-2 btn-block')]"));
         signUp.click();
         
-    	//To proceed further you must agree to our Terms of Service and Privacy Policy
+        String expectedTermsErrorMessage = "To proceed further you must agree to our Terms of Service and Privacy Policy";
+        WebElement uncheckedTermCheckbox = driver.findElement(By.xpath("//p[@class='error-mass mt-2']"));
+    	String actualTermsErrorMessage = uncheckedTermCheckbox.getText();
+        //To proceed further you must agree to our Terms of Service and Privacy Policy
+    	
+    	Assert.assertEquals(actualTermsErrorMessage, expectedTermsErrorMessage);
     }
     
     @AfterClass
