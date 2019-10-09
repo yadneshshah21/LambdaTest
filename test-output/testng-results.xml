@@ -2,32 +2,44 @@
 <testng-results skipped="0" failed="2" ignored="0" total="14" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="216893" started-at="2019-10-09T11:04:10 IST" finished-at="2019-10-09T11:07:47 IST">
+  <suite name="LambaTestSuite" duration-ms="197010" started-at="2019-10-09T13:06:52 IST" finished-at="2019-10-09T13:10:09 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="216893" started-at="2019-10-09T11:04:10 IST" finished-at="2019-10-09T11:07:47 IST">
+    <test name="FirefoxTest" duration-ms="197010" started-at="2019-10-09T13:06:52 IST" finished-at="2019-10-09T13:10:09 IST">
       <class name="com.lambdatest.SignUpTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="setUp" is-config="true" duration-ms="10157" started-at="2019-10-09T11:04:10 IST" finished-at="2019-10-09T11:04:20 IST">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="setUp" is-config="true" duration-ms="10033" started-at="2019-10-09T13:06:52 IST" finished-at="2019-10-09T13:07:02 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[69.0]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="15516" started-at="2019-10-09T11:04:20 IST" finished-at="2019-10-09T11:04:35 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="openBrowser" is-config="true" duration-ms="11784" started-at="2019-10-09T13:07:02 IST" finished-at="2019-10-09T13:07:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="FAIL" signature="emptyCompanyNameTest()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="emptyCompanyNameTest" duration-ms="14816" started-at="2019-10-09T11:04:35 IST" finished-at="2019-10-09T11:04:50 IST">
+        <test-method status="FAIL" signature="emptyCompanyNameTest()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="emptyCompanyNameTest" duration-ms="9164" started-at="2019-10-09T13:07:14 IST" finished-at="2019-10-09T13:07:23 IST">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Login - LambdaTest] but found [Verify Your Email Address - LambdaTest]]]>
+              <![CDATA[expected [https://accounts.lambdatest.com/email/verify] but found [https://accounts.lambdatest.com/register]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Login - LambdaTest] but found [Verify Your Email Address - LambdaTest]
+              <![CDATA[java.lang.AssertionError: expected [https://accounts.lambdatest.com/email/verify] but found [https://accounts.lambdatest.com/register]
 at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:575)
 at org.testng.Assert.assertEquals(Assert.java:585)
-at com.lambdatest.SignUpTest.emptyCompanyNameTest(SignUpTest.java:225)
+at com.lambdatest.SignUpTest.emptyCompanyNameTest(SignUpTest.java:235)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -44,129 +56,124 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:770)
 at org.testng.TestRunner.run(TestRunner.java:591)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyCompanyNameTest -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="5561" started-at="2019-10-09T11:04:50 IST" finished-at="2019-10-09T11:04:56 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="openBrowser" is-config="true" duration-ms="4699" started-at="2019-10-09T13:07:23 IST" finished-at="2019-10-09T13:07:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="emptyEmailTest()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="emptyEmailTest" duration-ms="9754" started-at="2019-10-09T11:04:56 IST" finished-at="2019-10-09T11:05:05 IST">
+        <test-method status="PASS" signature="emptyEmailTest()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="emptyEmailTest" duration-ms="9297" started-at="2019-10-09T13:07:28 IST" finished-at="2019-10-09T13:07:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyEmailTest -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="5085" started-at="2019-10-09T11:05:05 IST" finished-at="2019-10-09T11:05:11 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="openBrowser" is-config="true" duration-ms="4905" started-at="2019-10-09T13:07:37 IST" finished-at="2019-10-09T13:07:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="emptyNameTest()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="emptyNameTest" duration-ms="9920" started-at="2019-10-09T11:05:11 IST" finished-at="2019-10-09T11:05:20 IST">
+        <test-method status="PASS" signature="emptyNameTest()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="emptyNameTest" duration-ms="9508" started-at="2019-10-09T13:07:42 IST" finished-at="2019-10-09T13:07:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyNameTest -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="5352" started-at="2019-10-09T11:05:20 IST" finished-at="2019-10-09T11:05:26 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="openBrowser" is-config="true" duration-ms="4924" started-at="2019-10-09T13:07:52 IST" finished-at="2019-10-09T13:07:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="emptyPasswordTest()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="emptyPasswordTest" duration-ms="9682" started-at="2019-10-09T11:05:26 IST" finished-at="2019-10-09T11:05:35 IST">
+        <test-method status="PASS" signature="emptyPasswordTest()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="emptyPasswordTest" duration-ms="9626" started-at="2019-10-09T13:07:57 IST" finished-at="2019-10-09T13:08:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyPasswordTest -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="4945" started-at="2019-10-09T11:05:35 IST" finished-at="2019-10-09T11:05:40 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="openBrowser" is-config="true" duration-ms="5035" started-at="2019-10-09T13:08:06 IST" finished-at="2019-10-09T13:08:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="emptyPhoneTest()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="emptyPhoneTest" duration-ms="10295" started-at="2019-10-09T11:05:40 IST" finished-at="2019-10-09T11:05:51 IST">
+        <test-method status="PASS" signature="emptyPhoneTest()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="emptyPhoneTest" duration-ms="9674" started-at="2019-10-09T13:08:11 IST" finished-at="2019-10-09T13:08:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyPhoneTest -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="5322" started-at="2019-10-09T11:05:51 IST" finished-at="2019-10-09T11:05:56 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="openBrowser" is-config="true" duration-ms="4958" started-at="2019-10-09T13:08:21 IST" finished-at="2019-10-09T13:08:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="inValidPasswordTest()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="inValidPasswordTest" duration-ms="9294" started-at="2019-10-09T11:05:56 IST" finished-at="2019-10-09T11:06:05 IST">
+        <test-method status="PASS" signature="inValidPasswordTest()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="inValidPasswordTest" duration-ms="9233" started-at="2019-10-09T13:08:26 IST" finished-at="2019-10-09T13:08:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inValidPasswordTest -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="4898" started-at="2019-10-09T11:06:05 IST" finished-at="2019-10-09T11:06:10 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="openBrowser" is-config="true" duration-ms="5797" started-at="2019-10-09T13:08:35 IST" finished-at="2019-10-09T13:08:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="inValidPhoneTest()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="inValidPhoneTest" duration-ms="9171" started-at="2019-10-09T11:06:10 IST" finished-at="2019-10-09T11:06:19 IST">
+        <test-method status="PASS" signature="inValidPhoneTest()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="inValidPhoneTest" duration-ms="9550" started-at="2019-10-09T13:08:41 IST" finished-at="2019-10-09T13:08:51 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inValidPhoneTest -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="4900" started-at="2019-10-09T11:06:19 IST" finished-at="2019-10-09T11:06:24 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="openBrowser" is-config="true" duration-ms="4934" started-at="2019-10-09T13:08:51 IST" finished-at="2019-10-09T13:08:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="invalidEmailTest()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="invalidEmailTest" duration-ms="9252" started-at="2019-10-09T11:06:24 IST" finished-at="2019-10-09T11:06:34 IST">
+        <test-method status="PASS" signature="invalidEmailTest()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="invalidEmailTest" duration-ms="9119" started-at="2019-10-09T13:08:56 IST" finished-at="2019-10-09T13:09:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidEmailTest -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="4468" started-at="2019-10-09T11:06:34 IST" finished-at="2019-10-09T11:06:38 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="openBrowser" is-config="true" duration-ms="4986" started-at="2019-10-09T13:09:05 IST" finished-at="2019-10-09T13:09:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="loginRedirectionTest()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="loginRedirectionTest" duration-ms="2547" started-at="2019-10-09T11:06:38 IST" finished-at="2019-10-09T11:06:41 IST">
+        <test-method status="PASS" signature="loginRedirectionTest()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="loginRedirectionTest" duration-ms="2441" started-at="2019-10-09T13:09:10 IST" finished-at="2019-10-09T13:09:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginRedirectionTest -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="4904" started-at="2019-10-09T11:06:41 IST" finished-at="2019-10-09T11:06:46 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="openBrowser" is-config="true" duration-ms="4972" started-at="2019-10-09T13:09:12 IST" finished-at="2019-10-09T13:09:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="privacyPolicyRedirectionTest()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="privacyPolicyRedirectionTest" duration-ms="4990" started-at="2019-10-09T11:06:46 IST" finished-at="2019-10-09T11:06:50 IST">
+        <test-method status="PASS" signature="privacyPolicyRedirectionTest()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="privacyPolicyRedirectionTest" duration-ms="3511" started-at="2019-10-09T13:09:17 IST" finished-at="2019-10-09T13:09:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- privacyPolicyRedirectionTest -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="4735" started-at="2019-10-09T11:06:50 IST" finished-at="2019-10-09T11:06:55 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="openBrowser" is-config="true" duration-ms="4648" started-at="2019-10-09T13:09:21 IST" finished-at="2019-10-09T13:09:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="termsRedirectionTest()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="termsRedirectionTest" duration-ms="5007" started-at="2019-10-09T11:06:55 IST" finished-at="2019-10-09T11:07:00 IST">
+        <test-method status="PASS" signature="termsRedirectionTest()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="termsRedirectionTest" duration-ms="4159" started-at="2019-10-09T13:09:25 IST" finished-at="2019-10-09T13:09:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- termsRedirectionTest -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="5008" started-at="2019-10-09T11:07:00 IST" finished-at="2019-10-09T11:07:05 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="openBrowser" is-config="true" duration-ms="4675" started-at="2019-10-09T13:09:29 IST" finished-at="2019-10-09T13:09:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="uncheckedTerms()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="uncheckedTerms" duration-ms="7977" started-at="2019-10-09T11:07:05 IST" finished-at="2019-10-09T11:07:13 IST">
+        <test-method status="PASS" signature="uncheckedTerms()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="uncheckedTerms" duration-ms="8079" started-at="2019-10-09T13:09:34 IST" finished-at="2019-10-09T13:09:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uncheckedTerms -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="4775" started-at="2019-10-09T11:07:13 IST" finished-at="2019-10-09T11:07:18 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="openBrowser" is-config="true" duration-ms="4623" started-at="2019-10-09T13:09:42 IST" finished-at="2019-10-09T13:09:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="FAIL" signature="validRegistrationTest()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="validRegistrationTest" duration-ms="13818" started-at="2019-10-09T11:07:18 IST" finished-at="2019-10-09T11:07:32 IST">
+        <test-method status="FAIL" signature="validRegistrationTest()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="validRegistrationTest" duration-ms="8729" started-at="2019-10-09T13:09:47 IST" finished-at="2019-10-09T13:09:55 IST">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Login - LambdaTest] but found [Verify Your Email Address - LambdaTest]]]>
+              <![CDATA[expected [https://accounts.lambdatest.com/email/verify] but found [https://accounts.lambdatest.com/register]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Login - LambdaTest] but found [Verify Your Email Address - LambdaTest]
+              <![CDATA[java.lang.AssertionError: expected [https://accounts.lambdatest.com/email/verify] but found [https://accounts.lambdatest.com/register]
 at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:575)
 at org.testng.Assert.assertEquals(Assert.java:585)
-at com.lambdatest.SignUpTest.validRegistrationTest(SignUpTest.java:183)
+at com.lambdatest.SignUpTest.validRegistrationTest(SignUpTest.java:192)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -183,37 +190,32 @@ at java.util.ArrayList.forEach(Unknown Source)
 at org.testng.TestRunner.privateRun(TestRunner.java:770)
 at org.testng.TestRunner.run(TestRunner.java:591)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validRegistrationTest -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="openBrowser" is-config="true" duration-ms="4817" started-at="2019-10-09T11:07:32 IST" finished-at="2019-10-09T11:07:37 IST">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="openBrowser" is-config="true" duration-ms="4932" started-at="2019-10-09T13:09:55 IST" finished-at="2019-10-09T13:10:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="verifyElemntsOnPageTest()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="verifyElemntsOnPageTest" duration-ms="4142" started-at="2019-10-09T11:07:37 IST" finished-at="2019-10-09T11:07:41 IST">
+        <test-method status="PASS" signature="verifyElemntsOnPageTest()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="verifyElemntsOnPageTest" duration-ms="4405" started-at="2019-10-09T13:10:00 IST" finished-at="2019-10-09T13:10:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyElemntsOnPageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lambdatest.SignUpTest@18eed359]" name="tearDown" is-config="true" duration-ms="5720" started-at="2019-10-09T11:07:41 IST" finished-at="2019-10-09T11:07:47 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.lambdatest.SignUpTest@185d8b6]" name="tearDown" is-config="true" duration-ms="4571" started-at="2019-10-09T13:10:05 IST" finished-at="2019-10-09T13:10:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.lambdatest.SignUpTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- LambaTestSuite -->
 </testng-results>

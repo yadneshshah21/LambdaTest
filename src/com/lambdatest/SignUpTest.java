@@ -13,8 +13,11 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
+
+import com.beust.jcommander.Parameter;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -31,11 +34,12 @@ public class SignUpTest{
   
     
     //Setting up capabilities to run our test script
+    @Parameters(value= {"browser","version"})
     @BeforeClass
-    	public void setUp() throws Exception {
+    public void setUp(String browser, String version) throws Exception {
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserName", "chrome");
-        capabilities.setCapability("version", "70.0");
+        capabilities.setCapability("browserName", browser);
+        capabilities.setCapability("version", version);
         capabilities.setCapability("platform", "win10"); // If this cap isn't specified, it will just get the any available one
         capabilities.setCapability("build", "LambdaTestSampleApp");
         capabilities.setCapability("name", "LambdaTestJavaSample");
@@ -169,7 +173,7 @@ public class SignUpTest{
         fullName.sendKeys("TestName");
              
         WebElement email = driver.findElement(By.name("email"));
-        email.sendKeys("test3.lambdatest@gmail.com");
+        email.sendKeys("test6.lambdatest@gmail.com");
          
         WebElement password = driver.findElement(By.name("password"));
         password.sendKeys("Test@12345");
@@ -205,7 +209,7 @@ public class SignUpTest{
          fullName.sendKeys("TestName");
               
          WebElement email = driver.findElement(By.name("email"));
-         email.sendKeys("test2.lambdatest@gmail.com");
+         email.sendKeys("test7.lambdatest@gmail.com");
           
          WebElement password = driver.findElement(By.name("password"));
          password.sendKeys("Test@12345");
